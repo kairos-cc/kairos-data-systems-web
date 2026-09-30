@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Small Team Edition | Kairos Data Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Paddle.js Integration -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <script type="text/javascript">
+        Paddle.Environment.set('sandbox');
+        Paddle.Initialize({ 
+            token: 'test_29fc0193eaf447920ab16cab320' 
+        });
+    </script>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
 
@@ -51,8 +60,8 @@
                 <div class="text-4xl font-black mb-2">$1,499</div>
                 <div class="text-sm text-slate-500 mb-6">One-time payment. No recurring fees.</div>
                 
-                <!-- Sanitized checkout link pending Paddle approval -->
-                <a href="#!" class="inline-block w-full md:w-auto text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl transition">
+                <!-- Paddle Checkout Trigger -->
+                <a href="#!" class="paddle_button inline-block w-full md:w-auto text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl cursor-pointer transition" data-items='[{"priceId": "pri_01m3sy138h3x0p5995jf5xjf2z", "quantity": 1}]'>
                     Secure Direct Checkout
                 </a>
             </div>
