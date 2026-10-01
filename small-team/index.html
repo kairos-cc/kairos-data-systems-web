@@ -60,19 +60,36 @@
                 <div class="text-4xl font-black mb-2">$1,499</div>
                 <div class="text-sm text-slate-500 mb-6">One-time payment. No recurring fees.</div>
                 
+                <!-- GitHub Handle Capture -->
+                <div class="mb-6 text-left">
+                    <label for="github-handle" class="block text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">GitHub Username (For Delivery)</label>
+                    <input type="text" id="github-handle" placeholder="e.g., octocat" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition" required>
+                </div>
+
                 <!-- Paddle Programmatic Checkout Trigger -->
-                <a href="#!" onclick="Paddle.Checkout.open({ items: [{ priceId: 'pri_01m3sy138h3x0p5995jf5xjf2z', quantity: 1 }] }); return false;" class="inline-block w-full md:w-auto text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl cursor-pointer transition">
+                <button onclick="initializeCheckout()" class="w-full text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl cursor-pointer transition">
                     Secure Direct Checkout
-                </a>
+                </button>
             </div>
-                
-                <!-- Paddle Checkout Trigger -->
-                <a href="#!" class="paddle_button inline-block w-full md:w-auto text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl cursor-pointer transition" data-items='[{"priceId": "pri_01m3sy138h3x0p5995jf5xjf2z", "quantity": 1}]'>
-                    Secure Direct Checkout
-                </a>
-            </div>
-        </div>
-    </main>
+
+            <!-- Initialization Logic -->
+            <script>
+                function initializeCheckout() {
+                    const githubHandle = document.getElementById('github-handle').value.trim();
+                    
+                    if (!githubHandle) {
+                        alert("Please enter your GitHub username to receive the repository access.");
+                        return;
+                    }
+
+                    Paddle.Checkout.open({ 
+                        items: [{ priceId: 'pri_01m3sy138h3x0p5995jf5xjf2z', quantity: 1 }],
+                        customData: {
+                            github_username: githubHandle
+                        }
+                    });
+                }
+            </script>
 
     <!-- Compliance-Fortified Footer -->
     <footer class="border-t border-slate-900 max-w-4xl mx-auto px-6 py-12 text-xs text-slate-500">
