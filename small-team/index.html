@@ -60,6 +60,12 @@
                 <div class="text-4xl font-black mb-2">$1,499</div>
                 <div class="text-sm text-slate-500 mb-6">One-time payment. No recurring fees.</div>
                 
+                <!-- Paddle Programmatic Checkout Trigger -->
+                <a href="#!" onclick="Paddle.Checkout.open({ items: [{ priceId: 'pri_01m3sy138h3x0p5995jf5xjf2z', quantity: 1 }] }); return false;" class="inline-block w-full md:w-auto text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl cursor-pointer transition">
+                    Secure Direct Checkout
+                </a>
+            </div>
+                
                 <!-- Paddle Checkout Trigger -->
                 <a href="#!" class="paddle_button inline-block w-full md:w-auto text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold px-12 py-4 rounded-xl cursor-pointer transition" data-items='[{"priceId": "pri_01m3sy138h3x0p5995jf5xjf2z", "quantity": 1}]'>
                     Secure Direct Checkout
