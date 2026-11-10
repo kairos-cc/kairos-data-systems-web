@@ -30,7 +30,7 @@
     <script type="text/javascript">
         // Sandbox environment override removed for production execution.
         Paddle.Initialize({ 
-            token: 'YOUR_LIVE_CLIENT_TOKEN' // Inject your new live Client Token (live_...)
+            token: 'live_a6ac5160b3558e859376c295fc5'
         });
     </script>
 </head>
@@ -130,7 +130,7 @@
 
                     // Production Payload Execution
                     Paddle.Checkout.open({ 
-                        items: [{ priceId: 'YOUR_LIVE_PRICE_ID', quantity: 1 }], // Inject Live Price ID (pri_...)
+                        items: [{ priceId: 'pri_01m4bx2sef2qb109ecyvjhfbkh', quantity: 1 }],
                         customData: {
                             github_username: githubHandle
                         }
