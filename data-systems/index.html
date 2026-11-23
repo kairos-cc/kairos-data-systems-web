@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairos Data Systems | Universal Lakehouse Factory</title>
+    <meta name="description" content="Kairos Data Systems, a product line of Kairos Consulting Collective, LLC: production-grade Databricks Medallion pipelines and Terraform state backends on AWS and Azure.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+
+    <nav class="max-w-6xl mx-auto px-6 pt-8">
+        <a href="/" class="text-sm text-slate-400 hover:text-teal-400 transition">← Kairos Consulting Collective</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-6xl mx-auto px-6 pt-16 pb-16 text-center">
+        <p class="text-xs font-bold uppercase tracking-widest text-teal-400 mb-4">Kairos Data Systems</p>
+        <h1 class="text-5xl md:text-6xl font-black tracking-tight bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent mb-6">
+            THE UNIVERSAL LAKEHOUSE FACTORY
+        </h1>
+        <p class="text-xl text-slate-400 max-w-3xl mx-auto mb-10">
+            Stop copy-pasting monolithic infrastructure. Instantly generate production-grade Databricks Medallion pipelines and remote state backends on AWS and Azure, with GCP on the roadmap.
+        </p>
+    </header>
+
+    <!-- Technical Differentiator Section -->
+    <section class="max-w-4xl mx-auto px-6 pb-16">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl">
+            <h2 class="text-2xl font-bold mb-6 text-teal-400">Decoupled Factory Architecture</h2>
+            <ul class="space-y-4 text-slate-300">
+                <li class="flex items-start">
+                    <span class="text-teal-400 mr-3">✓</span>
+                    <div>
+                        <strong class="text-white"><code class="bg-slate-800 text-teal-300 font-mono text-sm px-1.5 py-0.5 rounded">/core</code> (The Logic):</strong> Your Delta Live Tables (DLT) and Autoloader ingestion pipelines remain 100% cloud-agnostic.
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-teal-400 mr-3">✓</span>
+                    <div>
+                        <strong class="text-white"><code class="bg-slate-800 text-teal-300 font-mono text-sm px-1.5 py-0.5 rounded">/providers</code> (The Infrastructure):</strong> Strictly scoped Terraform wrappers that provision highly secure, concurrent state backends (e.g., SSE-S3 encrypted buckets and DynamoDB lock tables).
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-teal-400 mr-3">✓</span>
+                    <div>
+                        <strong class="text-white"><code class="bg-slate-800 text-teal-300 font-mono text-sm px-1.5 py-0.5 rounded">init.sh</code> (The Orchestrator):</strong> A native CLI generator that bridges the logic and the infrastructure, instantly scaffolding isolated execution environments for your team.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SOP Section -->
+    <section class="max-w-4xl mx-auto px-6 pb-24">
+        <h2 class="text-2xl font-bold mb-8 text-center">Standard Operating Procedure</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                <div class="text-teal-400 font-black text-xl mb-3">Step 1</div>
+                <h3 class="font-bold mb-2">Lock the State</h3>
+                <p class="text-sm text-slate-400">Navigate to your target cloud provider's wrapper and execute the Terraform bootstrap.</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                <div class="text-teal-400 font-black text-xl mb-3">Step 2</div>
+                <h3 class="font-bold mb-2">Initialize Factory</h3>
+                <p class="text-sm text-slate-400">Run the orchestrator CLI to dynamically generate your execution environment.</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                <div class="text-teal-400 font-black text-xl mb-3">Step 3</div>
+                <h3 class="font-bold mb-2">Deploy Pipeline</h3>
+                <p class="text-sm text-slate-400">Execute the Databricks Asset Bundle directly to your workspace.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Persona Pricing Matrix -->
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Developer Tier -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between shadow-xl opacity-60">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Solo Architect</span>
+                    <h2 class="text-2xl font-bold mt-2 mb-4">Developer</h2>
+                    <div class="text-4xl font-black mb-6">$499.99 <span class="text-sm font-normal text-slate-500">one-time</span></div>
+                </div>
+                <button disabled class="block w-full text-center bg-slate-800 font-medium py-3 rounded-xl mt-8 cursor-not-allowed">Coming Soon</button>
+            </div>
+
+            <!-- Small Team Tier -->
+            <div class="bg-slate-900 border-2 border-teal-500/50 rounded-2xl p-8 flex flex-col justify-between shadow-xl relative scale-105">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Available Now</div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Collaboration</span>
+                    <h2 class="text-2xl font-bold mt-2 mb-4">Factory Scaffolding</h2>
+                    <p class="text-slate-400 text-sm mb-6">Engineered for growing teams standing up Databricks on AWS or Azure with collaborative workflows.</p>
+                    <div class="text-4xl font-black mb-6">$1,499 <span class="text-sm font-normal text-slate-500">one-time</span></div>
+                    <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                        <li class="flex items-center">✓ Turnkey Medallion Architecture</li>
+                        <li class="flex items-center">✓ Production-Grade DAB Blueprints</li>
+                        <li class="flex items-center">✓ Remote State Locks & Runbooks</li>
+                        <li class="flex items-center">✓ Multi-User Collaborative License</li>
+                    </ul>
+                </div>
+                <a href="/small-team/" class="block w-full text-center bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold py-3 rounded-xl mt-8 transition">View Specifications</a>
+            </div>
+
+            <!-- Enterprise Tier -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between shadow-xl opacity-60">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Scale & Compliance</span>
+                    <h2 class="text-2xl font-bold mt-2 mb-4">Enterprise</h2>
+                    <div class="text-4xl font-black mb-6">$4,999 <span class="text-sm font-normal text-slate-500">one-time</span></div>
+                </div>
+                <button disabled class="block w-full text-center bg-slate-800 font-medium py-3 rounded-xl mt-8 cursor-not-allowed">Coming Soon</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Compliance-Fortified Footer -->
+    <footer class="border-t border-slate-900 max-w-6xl mx-auto px-6 py-12 text-xs text-slate-500">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div class="space-y-1 text-center md:text-left">
+                <p class="text-slate-400 font-semibold">Kairos Consulting Collective, LLC</p>
+                <p>Foothill Ranch, CA 92610, United States</p>
+                <p>© 2026 Kairos Consulting Collective, LLC. All rights reserved.</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-center md:text-right">
+                <nav class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+                    <a href="/legal/eula" class="hover:text-teal-400 transition">EULA</a>
+                    <span class="text-slate-700">|</span>
+                    <a href="/legal/terms" class="hover:text-teal-400 transition">Terms of Service</a>
+                    <span class="text-slate-700">|</span>
+                    <a href="/legal/privacy" class="hover:text-teal-400 transition">Privacy Policy</a>
+                    <span class="text-slate-700">|</span>
+                    <a href="/legal/refund" class="hover:text-teal-400 transition">Refund Policy</a>
+                </nav>
+                <span class="hidden sm:inline text-slate-700">|</span>
+                <a href="mailto:info@kairoscc.io" class="hover:text-teal-400 text-slate-400 transition">Support: info@kairoscc.io</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
