@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kairos Data Systems has moved</title>
+    <meta name="robots" content="noindex">
+    <script>
+        // scaffolding.kairoscc.io/<path> → kairoscc.io/<new path>, keeping query and hash.
+        var map = { "/": "/data-systems/", "/small-team/": "/data-systems/small-team/", "/developer/": "/data-systems/developer/" };
+        var path = location.pathname.replace(/\/?$/, "/").replace(/^\/legal\/(\w+)\/$/, "/legal/$1");
+        var target = map[path] || path;
+        location.replace("https://kairoscc.io" + target + location.search + location.hash);
+    </script>
+    <meta http-equiv="refresh" content="1; url=https://kairoscc.io/data-systems/">
+</head>
+<body style="background:#020617;color:#cbd5e1;font-family:sans-serif;padding:2rem">
+    <p>Kairos Data Systems has moved to <a href="https://kairoscc.io/data-systems/" style="color:#2dd4bf">kairoscc.io/data-systems</a>.</p>
+</body>
+</html>
