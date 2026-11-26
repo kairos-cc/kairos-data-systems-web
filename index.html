@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics 4 (no ad features; EEA/UK/CH default to cookieless) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KBTWJ4Y45"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+            region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'] });
+        gtag('consent', 'default', { analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+        gtag('js', new Date());
+        gtag('config', 'G-0KBTWJ4Y45', { allow_google_signals: false, allow_ad_personalization_signals: false });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kairos Consulting Collective, LLC | Data platforms and apps</title>
@@ -150,6 +161,8 @@
                     <span class="text-slate-700">|</span>
                     <a href="/founder/" class="hover:text-teal-400 transition">Founder</a>
                 </nav>
+                <span class="hidden sm:inline text-slate-700">|</span>
+                <a href="https://datasystems.kairoscc.io/legal/privacy" class="hover:text-teal-400 transition">Privacy</a>
                 <span class="hidden sm:inline text-slate-700">|</span>
                 <a href="mailto:info@kairoscc.io" class="hover:text-teal-400 text-slate-400 transition">info@kairoscc.io</a>
             </div>
